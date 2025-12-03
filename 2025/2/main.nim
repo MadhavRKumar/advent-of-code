@@ -17,7 +17,7 @@ proc main() =
 
     for i in lower_bound..upper_bound:
         let s = i.intToStr()
-        if contains(s, re"\b(\d+?)(\1{1})\b"):
+        if contains(s, re"\b(\d+?)(\1+)\b"):
             ans = ans+i
   echo ans
 
